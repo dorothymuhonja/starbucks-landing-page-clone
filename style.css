@@ -4,6 +4,7 @@
     --color-primary: #006241;
     --color-secondary: #d50032;
     --color-extra: #d4e9e2;
+    --color-dark: #0c0e0d;
 
 }
 
@@ -36,6 +37,10 @@ p {
 
 img {
     max-width: 100%;
+}
+
+section a {
+    color: #fff;
 }
 
 /* navbar */
@@ -102,6 +107,16 @@ img {
     margin: 0 15px;
 }
 
+/* Box */
+.box {
+    margin-bottom: 30px;
+}
+
+.box-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* buttons */
 .btn {
     cursor: pointer;
@@ -136,4 +151,90 @@ img {
 
 .btn-dark:hover {
     background-color: #333;
+}
+
+/* backgrounds */
+.bg-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: var(--color-dark);
+    color: #fff;
+}
+
+/* text styling */
+.text-center {
+    text-align: center;
+}
+
+.text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-lg {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+/* padding */
+.py-sm {
+    padding: 10px 0;
+}
+
+.py-md {
+    padding: 20px 0;
+}
+
+.py-lg {
+    padding: 40px 0;
+}
+
+/* media queries */
+@media (max-width: 960px) {
+    .text-xl {
+        font-size: 30px;
+    }
+
+    .text-md {
+        font-size: 19px;
+    }
+
+    .text-lg {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 1150px) {
+    .box {
+        max-width: 1150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
